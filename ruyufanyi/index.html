@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="乳语翻译官网，专业提供母乳喂养相关内容的精准翻译与本地化服务。涵盖母乳科学、护理技巧、产后恢复及国际育儿资讯，致力于打破语言障碍，帮助全球妈妈获取科学喂养指导。">
+    <meta name="keywords" content="乳语翻译,母乳翻译,母乳喂养翻译,母婴翻译,母乳科学翻译">
+    <title>乳语翻译-专业母乳喂养与母婴资讯精准翻译平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #f7a8b3;
+            --primary-dark: #e67e96;
+            --secondary-color: #fdf2f4;
+            --text-main: #2c3e50;
+            --text-light: #6c757d;
+            --bg-body: #ffffff;
+            --bg-alt: #fff5f7;
+            --card-shadow: 0 4px 20px rgba(247, 168, 179, 0.15);
+            --border-radius: 12px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Container */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(247, 168, 179, 0.2);
+            padding: 15px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            font-size: 16px;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-dark);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #fff 100%);
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: var(--text-main);
+        }
+
+        .hero-text h1 span {
+            color: var(--primary-dark);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 32px;
+            max-width: 90%;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background-color: var(--bg-body);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .section-header p {
+            color: var(--text-light);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: var(--card-shadow);
+        }
+
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            background-color: var(--secondary-color);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+            font-size: 24px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 15px;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: var(--bg-alt);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            background: #fff;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 250px;
+        }
+
+        .service-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--primary-color);
+        }
+
+        .service-item h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .service-link {
+            color: var(--primary-dark);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 80px 0;
+        }
+
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .stat-item h4 {
+            font-size: 28px;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        .stat-item span {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+            background-color: var(--bg-alt);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+            transition: background 0.2s;
+        }
+
+        .faq-question:hover {
+            background-color: #fdf2f4;
+        }
+
+        .faq-answer {
+            padding: 0 20px 20px 20px;
+            color: var(--text-light);
+            display: none;
+            border-top: 1px solid transparent;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            padding-top: 15px;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-dark);
+        }
+
+        .faq-icon {
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fff;
+            padding: 60px 0 20px;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-light);
+            margin-top: 15px;
+            font-size: 14px;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-dark);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin: 0 auto 30px;
+            }
+
+            .hero-actions {
+                justify-content: center;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-brand p {
+                margin: 15px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C10.8954 2 10 2.89543 10 4C10 5.10457 10.8954 6 12 6C13.1046 6 14 5.10457 14 4C14 2.89543 13.1046 2 12 2Z" fill="#f7a8b3"/>
+                    <path d="M12 6C7.02944 6 3 10.0294 3 15C3 19.9706 7.02944 24 12 24C16.9706 24 21 19.9706 21 15" stroke="#f7a8b3" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M8 14C8 14 9.5 16 12 16C14.5 16 16 14 16 14" stroke="#f7a8b3" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <span>乳语翻译</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#services" class="active">翻译服务</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">获取报价</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>让科学的母乳喂养知识<br><span跨越语言界限</span></h1>
+                    <p>专注于母婴健康领域的专业翻译团队，为您提供从学术论文、护理指南到科普文章的精准本地化服务，助力全球妈妈获取专业指导。</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="cta-btn">开始翻译</a>
+                        <a href="#services" style="padding: 10px 24px; font-weight: 600; border: 1px solid #ddd; border-radius: 30px;">了解服务</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/seed/momcare/600/400" alt="专业母乳喂养指导" width="600" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>为什么选择乳语翻译？</h2>
+                    <p>深耕母婴垂直领域，我们懂专业，更懂妈妈</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="icon-box">📚</div>
+                        <h3>垂直领域深耕</h3>
+                        <p>团队成员均具备医学或生物学背景，熟悉母乳喂养专业术语，确保医学术语的准确传达。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon-box">🌍</div>
+                        <h3>多语言本地化</h3>
+                        <p>提供中英日韩等多语种互译服务，不仅翻译文字，更注重符合目标市场的表达习惯。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="icon-box">⚡</div>
+                        <h3>高效交付流程</h3>
+                        <p>标准化项目管理流程，支持加急处理，确保您的育儿资料、学术论文按时交付。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>我们的核心服务</h2>
+                    <p>全方位覆盖母乳喂养相关内容的翻译需求</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div>
+                            <h3>学术论文翻译</h3>
+                            <p>为科研人员提供SCI论文、研究报告的精准翻译，涵盖泌乳学、营养学及新生儿护理领域。</p>
+                        </div>
+                        <a href="#contact" class="service-link">查看案例 &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <div>
+                            <h3>科普与资讯编译</h3>
+                            <p>将国外权威育儿网站、医院指南编译为适合中国家庭阅读的科普文章，内容通俗易懂。</p>
+                        </div>
+                        <a href="#contact" class="service-link">查看案例 &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <div>
+                            <h3>专业文档本地化</h3>
+                            <p>针对母乳库、医疗机构、母婴用品品牌的宣传册、产品说明书进行专业术语校对与翻译。</p>
+                        </div>
+                        <a href="#contact" class="service-link">查看案例 &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <div class="container about-layout">
+                <div class="about-image">
+                    <img src="https://picsum.photos/seed/translation/500/600" alt="专业翻译团队工作场景" width="500" height="600">
+                </div>
+                <div class="about-text">
+                    <h2>用爱心与专业连接世界</h2>
+                    <p>“乳语翻译”由一群关注母婴健康的翻译人和医学爱好者共同创立。我们深知母乳喂养对宝宝和妈妈的重要性，因此致力于消除信息壁垒。</p>
+                    <p>无论是正在寻找国际喂养建议的职场妈妈，还是需要查阅外文文献的研究人员，我们都能提供值得信赖的语言桥梁。我们坚持“信、达、雅”的翻译标准，确保每一个术语都经得起推敲。</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>500+</h4>
+                            <span>翻译文档</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>98%</h4>
+                            <span>客户满意度</span>
+                        </div>
+                        <div class="stat-item">
+                            <h4>10+</h4>
+                            <span>合作机构</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container faq-container">
+                <div class="section-header">
+                    <h2>常见问题</h2>
+                    <p>关于翻译服务的常见疑问解答</p>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        母乳喂养相关的专业术语怎么处理？
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        我们拥有一套专属的母乳喂养术语库，对于“泌乳反射”、“前奶后奶”、“混合喂养”等核心概念，我们严格按照国际通用的医学标准进行翻译，并在译文中进行必要的注解，确保理解无误。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        翻译一篇中文育儿文章需要多久？
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        翻译时间取决于文章的长度和复杂度。一般科普文章在2000字左右，我们通常在3-5个工作日内完成初稿。如果是学术论文或急需使用的资料，我们也提供加急服务。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        你们支持哪些语言互译？
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        目前我们的核心服务包括中英互译、中日互译。随着业务拓展，我们正在逐步增加韩语及其他欧洲语种的服务能力，欢迎通过邮件咨询。
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        翻译后可以提供修改服务吗？
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        当然可以。在交付后的一定期限内（通常为两周），我们提供免费的修改服务。我们会根据您的反馈调整语气、措辞或格式，直到您满意为止。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span>乳语翻译</span>
+                    </a>
+                    <p>专注母婴健康领域的语言服务专家，帮助每一位妈妈跨越语言障碍，获取科学育儿知识。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>服务项目</h4>
+                    <ul>
+                        <li><a href="#">学术论文翻译</a></li>
+                        <li><a href="#">科普文章编译</a></li>
+                        <li><a href="#">企业文档翻译</a></li>
+                        <li><a href="#">术语库建设</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">团队介绍</a></li>
+                        <li><a href="#">服务流程</a></li>
+                        <li><a href="#">收费标准</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li><a href="#">邮箱：contact@ruyu.com</a></li>
+                        <li><a href="#">电话：400-123-4567</a></li>
+                        <li><a href="#">工作时间：9:00 - 18:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 乳语翻译 版权所有 | 仅供展示用途</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的FAQ折叠逻辑
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // 关闭其他打开的项
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // 切换当前项
+                    item.classList.toggle('active');
+                });
+            });
+
+            // 平滑滚动
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+                          </html>
