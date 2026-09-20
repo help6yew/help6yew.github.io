@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="妃舞帝殇 - 古风言情与宫廷权谋小说全集在线阅读，收录经典宫廷故事、妃嫔生存指南及帝王心术解析。">
+    <meta name="keywords" content="妃舞帝殇,古风小说,宫廷小说,言情小说,在线阅读">
+    <title>妃舞帝殇-宫廷权谋与古风言情全集阅读平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B0000;
+            --secondary-color: #D4AF37;
+            --bg-color: #f9f7f2;
+            --card-bg: #ffffff;
+            --text-main: #2c2c2c;
+            --text-sub: #666666;
+            --border-color: #e0e0e0;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "SimSun", serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            font-family: "KaiTi", "STKaiti", serif;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .search-box input {
+            padding: 0.5rem;
+            border: none;
+            outline: none;
+            width: 200px;
+        }
+
+        .search-box button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0 1rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c0b0b 0%, #4a1212 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDQwIDQwIiBmaWxsLW9wYWNpdHk9IjAuMDUiIGZpbGw9IiNmZmYiPjxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjEwIi8+PC9zdmc+');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: "KaiTi", "STKaiti", serif;
+            text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--secondary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            font-family: "KaiTi", "STKaiti", serif;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+            margin-left: 1.5rem;
+        }
+
+        /* Featured Grid */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .book-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(139, 0, 0, 0.15);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: 280px;
+            background-color: #ddd;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .book-card:hover .book-cover img {
+            transform: scale(1.05);
+        }
+
+        .book-info {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .book-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .book-meta {
+            font-size: 0.85rem;
+            color: var(--text-sub);
+            margin-bottom: 0.5rem;
+        }
+
+        .book-tags {
+            margin-top: auto;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .book-tag {
+            font-size: 0.75rem;
+            padding: 0.1rem 0.5rem;
+            background: #f0f0f0;
+            border-radius: 4px;
+            color: #666;
+        }
+
+        /* Categories & Lists */
+        .content-split {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .list-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .list-item {
+            display: flex;
+            background: var(--card-bg);
+            padding: 1rem;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+            align-items: center;
+        }
+
+        .list-item-num {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+            font-family: "KaiTi", "STKaiti", serif;
+            margin-right: 1rem;
+            min-width: 40px;
+        }
+
+        .list-content {
+            flex: 1;
+        }
+
+        .list-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+
+        .list-desc {
+            font-size: 0.9rem;
+            color: var(--text-sub);
+        }
+
+        .list-actions {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background 0.3s;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #6a0000;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--border-color);
+            background: white;
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        /* Sidebar */
+        aside .widget {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .ranking-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ranking-list li:last-child {
+            border-bottom: none;
+        }
+
+        .rank-num {
+            font-weight: bold;
+            color: var(--text-sub);
+        }
+
+        .rank-num.top-1 { color: #D4AF37; font-size: 1.2rem; }
+        .rank-num.top-2 { color: #C0C0C0; font-size: 1.1rem; }
+        .rank-num.top-3 { color: #CD7F32; font-size: 1.1rem; }
+
+        .rank-name {
+            flex: 1;
+            margin-left: 0.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c2c2c;
+            color: #999;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            margin: 0 0.8rem;
+            font-size: 0.9rem;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+                gap: 1rem;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+
+            .search-box input {
+                width: 100%;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .content-split {
+                grid-template-columns: 1fr;
+            }
+
+            .list-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .list-item-num {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">妃舞<span>帝殇</span></a>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">宫廷小说</a></li>
+                <li><a href="#">权谋剧情</a></li>
+                <li><a href="#">排行榜</a></li>
+                <li><a href="#">作者专区</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索书名、作者或章节...">
+            <button type="button">搜索</button>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container hero-content">
+        <h1>妃舞帝殇</h1>
+        <p>深宫幽梦，权倾天下。在这里，阅尽千年宫廷兴衰，品味极致古风权谋。</p>
+        <div class="hero-tags">
+            <span class="tag">宫廷争斗</span>
+            <span class="tag">唯美言情</span>
+            <span class="tag">帝王心术</span>
+            <span class="tag">历史架空</span>
+        </div>
+    </div>
+</section>
+
+<main class="container">
+    <!-- Featured Section -->
+    <section>
+        <div class="section-title">
+            <h2>热门推荐</h2>
+        </div>
+        <div class="featured-grid">
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="https://picsum.photos/seed/feiwu1/300/400" alt="书封预览">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">凤临九天：殇帝的妃</h3>
+                    <p class="book-meta">作者：墨染青衣 | 状态：连载中</p>
+                    <div class="book-tags">
+                        <span class="book-tag">虐恋</span>
+                        <span class="book-tag">重生</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="https://picsum.photos/seed/feiwu2/300/400" alt="书封预览">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">深宫旧梦：殇帝挽歌</h3>
+                    <p class="book-meta">作者：红颜泪 | 状态：已完结</p>
+                    <div class="book-tags">
+                        <span class="book-tag">古风</span>
+                        <span class="book-tag">虐心</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="https://picsum.photos/seed/feiwu3/300/400" alt="书封预览">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">盛世红妆：权谋之路</h3>
+                    <p class="book-meta">作者：柳下惠 | 状态：连载中</p>
+                    <div class="book-tags">
+                        <span class="book-tag">宫斗</span>
+                        <span class="book-tag">励志</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="book-card">
+                <div class="book-cover">
+                    <img src="https://picsum.photos/seed/feiwu4/300/400" alt="书封预览">
+                </div>
+                <div class="book-info">
+                    <h3 class="book-title">殇帝传奇：后宫风云录</h3>
+                    <p class="book-meta">作者：云中鹤 | 状态：已完结</p>
+                    <div class="book-tags">
+                        <span class="book-tag">历史</span>
+                        <span class="book-tag">权谋</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="content-split">
+        <!-- Main Content Area -->
+        <div class="main-column">
+            <section>
+                <div class="section-title">
+                    <h2>最新章节</h2>
+                </div>
+                <div class="list-group">
+                    <article class="list-item">
+                        <span class="list-item-num">01</span>
+                        <div class="list-content">
+                            <h3 class="list-title"><a href="#">第一章：初入深宫，步步惊心</a></h3>
+                            <p class="list-desc">命运的齿轮开始转动，她带着满腔的仇恨与复仇的信念，踏入了这座金碧辉煌却又危机四伏的皇宫...</p>
+                        </div>
+                        <div class="list-actions">
+                            <button class="btn btn-primary">阅读</button>
+                            <button class="btn btn-outline">收藏</button>
+                        </div>
+                    </article>
+
+                    <article class="list-item">
+                        <span class="list-item-num">02</span>
+                        <div class="list-content">
+                            <h3 class="list-title"><a href="#">第二章：御花园偶遇，暗藏玄机</a></h3>
+                            <p class="list-desc">春日的御花园百花争艳，却掩盖不住人心的险恶。她在花丛中瞥见了一个熟悉的背影，心中不禁升起一丝寒意...</p>
+                        </div>
+                        <div class="list-actions">
+                            <button class="btn btn-primary">阅读</button>
+                            <button class="btn btn-outline">收藏</button>
+                        </div>
+                    </article>
+
+                    <article class="list-item">
+                        <span class="list-item-num">03</span>
+                        <div class="list-content">
+                            <h3 class="list-title"><a href="#">第三章：选秀风波，各怀鬼胎</a></h3>
+                            <p class="list-desc">三年一度的选秀大典即将拉开帷幕，整个京城都为之沸腾。然而，在这看似热闹的表象下，一场针对她的阴谋正在悄然酝酿...</p>
+                        </div>
+                        <div class="list-actions">
+                            <button class="btn btn-primary">阅读</button>
+                            <button class="btn btn-outline">收藏</button>
+                        </div>
+                    </article>
+
+                    <article class="list-item">
+                        <span class="list-item-num">04</span>
+                        <div class="list-content">
+                            <h3 class="list-title"><a href="#">第四章：夜半惊魂，危机四伏</a></h3>
+                            <p class="list-desc">深夜的宫道寂静无声，只有巡逻的侍卫偶尔传来的脚步声。她提着灯笼，小心翼翼地向前走去，生怕惊动了什么不干净的东西...</p>
+                        </div>
+                        <div class="list-actions">
+                            <button class="btn btn-primary">阅读</button>
+                            <button class="btn btn-outline">收藏</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section style="margin-top: 3rem;">
+                <div class="section-title">
+                    <h2>阅读指南与推荐</h2>
+                </div>
+                <article style="background: white; padding: 1.5rem; border-radius: 8px; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.04);">
+                    <h3 style="margin-bottom: 0.8rem; color: var(--primary-color);">如何挑选适合你的宫廷小说？</h3>
+                    <p style="margin-bottom: 0.8rem; color: var(--text-sub);">
+                        宫廷小说因其复杂的人物关系和跌宕起伏的剧情深受读者喜爱。在选择阅读作品时，建议关注以下几点：
+                    </p>
+                    <ul style="padding-left: 1.2rem; color: var(--text-sub);">
+                        <li style="margin-bottom: 0.5rem;"><strong>虐恋程度：</strong>根据个人喜好选择“甜宠”还是“虐心”风格。</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>历史背景：</strong>架空历史类作品更注重权谋设计，正剧向作品则需严谨的历史考据。</li>
+                        <li style="margin-bottom: 0.5rem;"><strong>人物性格：</strong>主角是否足够立体，反派是否有血有肉。</li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside>
+            <div class="widget">
+                <h3 class="widget-title">热门榜单</h3>
+                <ul class="ranking-list">
+                    <li>
+                        <span class="rank-num top-1">1</span>
+                        <span class="rank-name">凤临九天：殇帝的妃</span>
+                        <span class="rank-num">98.2</span>
+                    </li>
+                    <li>
+                        <span class="rank-num top-2">2</span>
+                        <span class="rank-name">深宫旧梦：殇帝挽歌</span>
+                        <span class="rank-num">96.5</span>
+                    </li>
+                    <li>
+                        <span class="rank-num top-3">3</span>
+                        <span class="rank-name">盛世红妆：权谋之路</span>
+                        <span class="rank-num">95.8</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">4</span>
+                        <span class="rank-name">殇帝传奇：后宫风云录</span>
+                        <span class="rank-num">93.1</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">5</span>
+                        <span class="rank-name">红颜劫：殇帝的囚徒</span>
+                        <span class="rank-num">91.4</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h3 class="widget-title">热门标签</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                    <a href="#" class="tag">帝王</a>
+                    <a href="#" class="tag">后宫</a>
+                    <a href="#" class="tag">复仇</a>
+                    <a href="#" class="tag">言情</a>
+                    <a href="#" class="tag">权谋</a>
+                    <a href="#" class="tag">虐恋</a>
+                    <a href="#" class="tag">穿越</a>
+                    <a href="#" class="tag">古风</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="#">关于我们</a>
+            <a href="#">版权声明</a>
+            <a href="#">免责声明</a>
+            <a href="#">读者反馈</a>
+            <a href="#">联系方式</a>
+        </div>
+        <p class="copyright">Copyright © 2023 妃舞帝殇 - 古风小说阅读平台 All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
