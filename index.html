@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大连胃肠医院是一家专业从事胃肠疾病诊疗的现代化医疗机构，提供胃肠镜检查、胃病、肠病、便秘及肛肠疾病的专业治疗服务。医院拥有先进的医疗设备和经验丰富的专家团队，致力于为大连市民提供精准、舒适、人性化的诊疗体验。">
+    <meta name="keywords" content="大连胃肠医院,大连胃病医院,大连肠炎治疗,大连便秘专科,大连痔疮医院,大连胃肠镜检查">
+    <title>大连胃肠医院-专业胃肠疾病诊疗与康复服务</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #004c99;
+            --accent-color: #e6f0fa;
+            --text-dark: #333333;
+            --text-gray: #666666;
+            --bg-light: #f9f9f9;
+            --white: #ffffff;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --header-height: 70px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            height: var(--header-height);
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+            margin-left: 5px;
+        }
+
+        .nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .nav a:hover, .nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .hotline {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .btn-appointment {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 8px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+
+        .btn-appointment:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: var(--header-height);
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-tags {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
+            background-color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--bg-light);
+            border-radius: var(--border-radius);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Problem Section */
+        .problem-section {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-header h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .problem-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .problem-card h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .problem-card h3::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background-color: var(--primary-color);
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        .problem-card ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: var(--text-gray);
+            font-size: 15px;
+        }
+
+        .problem-card ul li::before {
+            content: '•';
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+        }
+
+        .service-category {
+            margin-bottom: 60px;
+        }
+
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            border: 1px solid #eee;
+            padding: 25px;
+            border-radius: var(--border-radius);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .service-item:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 5px 15px rgba(0,102,204,0.1);
+        }
+
+        .service-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .service-desc {
+            font-size: 14px;
+            color: var(--text-gray);
+            flex-grow: 1;
+        }
+
+        .service-link {
+            margin-top: 15px;
+            color: var(--primary-color);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* Expert Section */
+        .expert {
+            padding: 80px 0;
+            background-color: var(--bg-light);
+        }
+
+        .expert-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .expert-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .expert-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 40px;
+        }
+
+        .expert-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .expert-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .expert-title {
+            color: var(--primary-color);
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .expert-tags {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .expert-tags span {
+            font-size: 12px;
+            background: #eee;
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--text-gray);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 80px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            margin-top: 15px;
+            color: var(--text-gray);
+            font-size: 15px;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-item.active .faq-question::before {
+            content: '+';
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 10px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+        }
+
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--white);
+        }
+
+        .footer-info p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+
+            .hero-tags {
+                justify-content: center;
+            }
+
+            .features-grid, .problem-grid, .expert-grid, .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .header-contact {
+                display: none;
+            }
+
+            .hero-text h1 {
+                font-size: 32px;
+            }
+
+            .features-grid, .problem-grid, .expert-grid, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            大连胃肠医院
+            <span>Dalian Gastro Hospital</span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#services">科室介绍</a></li>
+                <li><a href="#experts">专家团队</a></li>
+                <li><a href="#cases">诊疗案例</a></li>
+                <li><a href="#faq">健康科普</a></li>
+            </ul>
+        </nav>
+        <div class="header-contact">
+            <div class="hotline">021-1234-5678</div>
+            <a href="tel:02112345678" class="btn-appointment">在线咨询</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>专注胃肠健康，守护您的消化系统</h1>
+                <p>大连胃肠医院是集医疗、教学、科研为一体的现代化专科医院。我们致力于为大连市民提供专业、精准、舒适的胃肠疾病诊疗服务。</p>
+                <div class="hero-tags">
+                    <span class="tag">数字化诊疗</span>
+                    <span class="tag">微创技术</span>
+                    <span class="tag">专家亲诊</span>
+                    <span class="tag">医保定点</span>
+                </div>
+                <a href="#contact" class="btn-appointment" style="padding: 12px 40px; font-size: 16px;">预约专家号</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://picsum.photos/seed/gastro1/600/400" alt="大连胃肠医院诊疗环境" width="600" height="400">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>权威专家团队</h3>
+                    <p>汇聚省内外知名胃肠专家，临床经验丰富，为您提供一对一诊疗方案。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔬</div>
+                    <h3>尖端检查设备</h3>
+                    <p>引进国际先进胃肠镜及微创诊疗设备，检查更精准，治疗更安全。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>价格透明规范</h3>
+                    <p>严格执行物价标准，杜绝隐形消费，让患者明明白白看病。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🛋️</div>
+                    <h3>舒适就诊体验</h3>
+                    <p>人性化病房环境，全程导诊服务，缓解就医紧张情绪。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>常见胃肠疾病困扰</h2>
+                <p>如果您出现以下症状，请及时寻求专业帮助，以免延误病情。</p>
+            </div>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <h3>慢性胃炎与溃疡</h3>
+                    <ul>
+                        <li>长期胃痛、胃胀、反酸</li>
+                        <li>食欲不振、消化不良</li>
+                        <li>黑便、呕血等严重症状</li>
+                        <li>幽门螺杆菌感染</li>
+                    </ul>
+                </div>
+                <div class="problem-card">
+                    <h3>肠道功能紊乱</h3>
+                    <ul>
+                        <li>慢性腹泻与便秘交替</li>
+                        <li>腹痛、腹胀、肠鸣</li>
+                        <li>排便不尽感</li>
+                        <li>肠易激综合征</li>
+                    </ul>
+                </div>
+                <div class="problem-card">
+                    <h3>肛肠疾病</h3>
+                    <ul>
+                        <li>痔疮、便血、脱出</li>
+                        <li>肛裂、肛瘘</li>
+                        <li>肛门瘙痒、疼痛</li>
+                        <li>肛周脓肿</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>特色诊疗科室</h2>
+                <p>多学科协作，全方位解决您的胃肠健康问题。</p>
+            </div>
+
+            <div class="service-category">
+                <h3 class="category-title">消化内科</h3>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="service-title">无痛胃肠镜检查</div>
+                        <div class="service-desc">采用进口麻醉技术，全程无痛，快速发现胃溃疡、息肉、肿瘤等病变。</div>
+                        <a href="#" class="service-link">了解详情 &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-title">幽门螺杆菌检测</div>
+                        <div class="service-desc">C13/C14呼气试验，快速、无创、准确，有效根除胃病根源。</div>
+                        <a href="#" class="service-link">了解详情 &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-title">炎症性肠病诊疗</div>
+                        <div class="service-desc">针对溃疡性结肠炎、克罗恩病等慢性肠道疾病进行规范化治疗。</div>
+                        <a href="#" class="service-link">了解详情 &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-category">
+                <h3 class="category-title">肛肠外科</h3>
+                <div class="service-list">
+                    <div class="service-item">
+                        <div class="service-title">微创痔疮手术</div>
+                        <div class="service-desc">PPH、HCPT等微创技术，出血少、恢复快，不影响正常工作生活。</div>
+                        <a href="#" class="service-link">了解详情 &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-title">肛门直肠畸形矫正</div>
+                        <div class="service-desc">针对先天性及后天性肛门直肠疾病提供专业矫正治疗方案。</div>
+                        <a href="#" class="service-link">了解详情 &rarr;</a>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-title">便秘综合治疗</div>
+                        <div class="service-desc">通过生物反馈、药物及手术治疗顽固性便秘，改善排便功能。</div>
+                        <a href="#" class="service-link">了解详情 &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Team -->
+    <section id="experts" class="expert">
+        <div class="container">
+            <div class="section-header">
+                <h2>资深专家团队</h2>
+                <p>名医坐诊，用精湛医术守护您的胃肠健康。</p>
+            </div>
+            <div class="expert-grid">
+                <div class="expert-card">
+                    <div class="expert-img">👨‍⚕️</div>
+                    <div class="expert-info">
+                        <div class="expert-name">李明远</div>
+                        <div class="expert-title">消化内科 主任医师</div>
+                        <div class="expert-tags">
+                            <span>20年经验</span>
+                            <span>内镜专家</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-img">👩‍⚕️</div>
+                    <div class="expert-info">
+                        <div class="expert-name">王雅婷</div>
+                        <div class="expert-title">肛肠外科 副主任医师</div>
+                        <div class="expert-tags">
+                            <span>微创手术</span>
+                            <span>便秘专科</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-img">👨‍⚕️</div>
+                    <div class="expert-info">
+                        <div class="expert-name">张志强</div>
+                        <div class="expert-title">中西医结合科 主任医师</div>
+                        <div class="expert-tags">
+                            <span>中医调理</span>
+                            <span>慢性胃炎</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="expert-card">
+                    <div class="expert-img">👩‍⚕️</div>
+                    <div class="expert-info">
+                        <div class="expert-name">刘淑芬</div>
+                        <div class="expert-title">营养科 主任医师</div>
+                        <div class="expert-tags">
+                            <span>饮食指导</span>
+                            <span>术后康复</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>患者常见问题解答</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">胃肠镜检查痛苦吗？需要多久？</div>
+                    <div class="faq-answer">
+                        大连胃肠医院采用进口麻醉剂进行无痛胃肠镜检查，患者在检查过程中处于睡眠状态，感觉不到疼痛。整个检查过程通常需要15-30分钟，非常安全快速。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">检查出胃息肉需要治疗吗？</div>
+                    <div class="faq-answer">
+                        胃息肉属于癌前病变的一种，如果发现息肉，建议在医生指导下进行内镜下切除，以防止癌变。切除后定期复查即可。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">治疗便秘有哪些方法？</div>
+                    <div class="faq-answer">
+                        治疗便秘需根据病因选择方法。轻度便秘可通过饮食调整、运动和药物辅助；顽固性便秘则可能需要通过生物反馈治疗或微创手术改善排便功能。
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">医院支持医保报销吗？</div>
+                    <div class="faq-answer">
+                        我院是大连市医保定点单位，符合医保报销范围的检查和治疗项目均可按规定比例报销，具体报销比例请咨询医院前台。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact" class="cta-section">
+        <div class="container cta-content">
+            <h2>胃肠不适，早查早治</h2>
+            <p>现在预约，即可享受免费初步咨询及专家号优先安排服务</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-appointment" style="background: white; color: var(--primary-color);">在线咨询医生</a>
+                <a href="#" class="btn-outline">查看预约流程</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col footer-info">
+                <h4>大连胃肠医院</h4>
+                <p>大连胃肠医院致力于为患者提供高品质的胃肠健康服务，以精湛的医术、先进的设备和贴心的服务，赢得了广大患者的信赖。</p>
+                <p><strong>地址：</strong>大连市中山区中山路123号</p>
+                <p><strong>电话：</strong>021-1234-5678</p>
+                <p><strong>时间：</strong>24小时急诊接诊</p>
+            </div>
+            <div class="footer-col">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#">医院概况</a></li>
+                    <li><a href="#">专家团队</a></li>
+                    <li><a href="#">特色科室</a></li>
+                    <li><a href="#">健康科普</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>诊疗项目</h4>
+                <ul>
+                    <li><a href="#">无痛胃镜</a></li>
+                    <li><a href="#">无痛肠镜</a></li>
+                    <li><a href="#">痔疮治疗</a></li>
+                    <li><a href="#">便秘专科</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>便民服务</h4>
+                <ul>
+                    <li><a href="#">在线预约</a></li>
+                    <li><a href="#">预约挂号</a></li>
+                    <li><a href="#">报告查询</a></li>
+                    <li><a href="#">交通指南</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 大连胃肠医院 版权所有 | 医疗广告审查证明书 (辽)医广[2023]第04-05-06号</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ Toggle Logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+
+        // Smooth Scroll for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerOffset = 70;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+  </html>
