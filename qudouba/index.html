@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祛痘吧 - 专业祛痘护肤指南与科学护理方案</title>
+    <meta name="description" content="祛痘吧提供最新的祛痘方法、痘痘成因分析、护肤产品推荐及专业医美建议。帮助您科学祛痘，改善肌肤问题，找回健康自信。">
+    <meta name="keywords" content="祛痘吧,祛痘方法,痘痘治疗,护肤指南,痤疮护理">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --primary-hover: #fa5252;
+            --secondary-color: #4ecdc4;
+            --text-dark: #2d3436;
+            --text-gray: #636e72;
+            --bg-light: #f7f9fc;
+            --white: #ffffff;
+            --border-radius: 12px;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 90%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 16px;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary {
+            background: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #fff0f0 0%, #ffe3e3 100%);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: var(--text-dark);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 16px 20px;
+            padding-right: 120px;
+            border-radius: 30px;
+            border: 1px solid #e1e4e8;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            outline: none;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            bottom: 5px;
+            padding: 0 25px;
+            border-radius: 25px;
+        }
+
+        /* Stats */
+        .stats-bar {
+            background: var(--white);
+            margin-top: -30px;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Categories */
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: var(--text-gray);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .category-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border: 1px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow);
+            border-color: #ffe3e3;
+        }
+
+        .cat-icon {
+            font-size: 36px;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .cat-name {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        /* Treatment Guide */
+        .guide-section {
+            background: var(--white);
+            padding: 80px 0;
+        }
+
+        .guide-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .guide-content h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .guide-content p {
+            color: var(--text-gray);
+            margin-bottom: 20px;
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-dark);
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: var(--secondary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .guide-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .faq-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .faq-item p {
+            font-size: 14px;
+            color: var(--text-gray);
+        }
+
+        /* Products Section */
+        .products-section {
+            background: var(--white);
+            padding: 80px 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            height: 200px;
+            width: 100%;
+            background-color: #eee;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-tag {
+            font-size: 12px;
+            color: var(--primary-color);
+            background: #fff0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .product-title {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .product-desc {
+            font-size: 13px;
+            color: var(--text-gray);
+            margin-bottom: 15px;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 60px 0 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #b2bec3;
+            font-size: 14px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 13px;
+            color: #636e72;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .header-inner {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav {
+                width: 100%;
+                margin: 15px 0;
+                overflow-x: auto;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .guide-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-bar {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                祛痘吧<span>Pro</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#guide">祛痘指南</a></li>
+                    <li><a href="#products">护肤产品</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#community">社区讨论</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="btn btn-outline">登录</button>
+                <button class="btn btn-primary">免费咨询</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>告别痘痘困扰，<br><span>找回健康肌肤</span></h1>
+                <p>汇集百万用户的真实祛痘经验，提供科学的护肤方案、专业的产品评测与一对一的在线咨询。</p>
+                <div class="search-box">
+                    <input type="text" placeholder="搜索：痘痘类型、护肤成分、治疗方案...">
+                    <button class="btn btn-primary">搜索</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-num">500k+</span>
+                    <span class="stat-label">累计咨询用户</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">200+</span>
+                    <span class="stat-label">专业护肤顾问</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">98%</span>
+                    <span class="stat-label">方案好评率</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">50+</span>
+                    <span class="stat-label">合作护肤品牌</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-top: 60px;">
+            <div class="section-title">
+                <h2>按痘痘类型选择方案</h2>
+                <p>不同的痘痘类型需要不同的护理策略，精准分类是有效祛痘的第一步</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <span class="cat-icon">🔥</span>
+                    <div class="cat-name">红肿痘痘</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">⚫</span>
+                    <div class="cat-name">黑头粉刺</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">⚪</span>
+                    <div class="cat-name">白头粉刺</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">💎</span>
+                    <div class="cat-name">结节囊肿</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">🦠</span>
+                    <div class="cat-name">激素痘</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">🌸</span>
+                    <div class="cat-name">姨妈痘</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">🧴</span>
+                    <div class="cat-name">痘印修复</div>
+                </div>
+                <div class="category-card">
+                    <span class="cat-icon">💪</span>
+                    <div class="cat-name">控油祛痘</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="guide-section" id="guide">
+            <div class="container">
+                <div class="guide-grid">
+                    <div class="guide-content">
+                        <h3>科学祛痘三部曲</h3>
+                        <p>祛痘不是盲目刷酸或乱涂药膏。在祛痘吧，我们强调“清洁-调理-修复”的科学流程。</p>
+                        <ul class="check-list">
+                            <li><strong>温和清洁：</strong>去除多余油脂与污垢，避免破坏皮肤屏障。</li>
+                            <li><strong>精准调理：</strong>使用水杨酸或阿达帕林等成分，针对炎症进行抑制。</li>
+                            <li><strong>屏障修复：</strong>祛痘后及时使用修复霜，减少色素沉淀和敏感。</li>
+                            <li><strong>生活管理：</strong>调整饮食结构，保证充足睡眠，从内而外改善肤质。</li>
+                        </ul>
+                        <div style="margin-top: 30px;">
+                            <a href="#" class="btn btn-primary">查看详细指南</a>
+                            <a href="#" class="btn btn-outline" style="margin-left: 10px;">在线自测</a>
+                        </div>
+                    </div>
+                    <div class="guide-image">
+                        <!-- 使用picsum作为占位图，实际应替换为祛痘相关图片 -->
+                        <img src="https://picsum.photos/seed/skincare1/600/400" alt="科学护肤示意图">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>热门祛痘好物推荐</h2>
+                    <p>经过严格筛选，这些成分安全、效果显著的产品深受用户信赖</p>
+                </div>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/p1/400/300" alt="祛痘精华">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">热门推荐</span>
+                            <h4 class="product-title">水杨酸祛痘精华</h4>
+                            <p class="product-desc">疏通毛孔，快速消退红肿痘痘，适合油性及混合性肌肤。</p>
+                            <div class="product-footer">
+                                <span class="price">¥129</span>
+                                <button class="btn btn-outline" style="padding: 4px 12px; font-size: 12px;">查看详情</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/p2/400/300" alt="修复面霜">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">屏障修复</span>
+                            <h4 class="product-title">积雪草舒缓面霜</h4>
+                            <p class="product-desc">祛痘后必备，舒缓泛红，快速修护受损肌肤屏障。</p>
+                            <div class="product-footer">
+                                <span class="price">¥89</span>
+                                <button class="btn btn-outline" style="padding: 4px 12px; font-size: 12px;">查看详情</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/p3/400/300" alt="清洁泥膜">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">深层清洁</span>
+                            <h4 class="product-title">高岭土清洁泥膜</h4>
+                            <p class="product-desc">吸附毛孔深处的油脂污垢，预防黑头粉刺生成。</p>
+                            <div class="product-footer">
+                                <span class="price">¥59</span>
+                                <button class="btn btn-outline" style="padding: 4px 12px; font-size: 12px;">查看详情</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-img">
+                            <img src="https://picsum.photos/seed/p4/400/300" alt="祛痘凝胶">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-tag">急救神器</span>
+                            <h4 class="product-title">局部祛痘凝胶</h4>
+                            <p class="product-desc">点涂式设计，针对红肿大痘，快速消炎，不粘腻。</p>
+                            <div class="product-footer">
+                                <span class="price">¥39</span>
+                                <button class="btn btn-outline" style="padding: 4px 12px; font-size: 12px;">查看详情</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div style="text-align: center; margin-top: 40px;">
+                    <a href="#" class="btn btn-outline">浏览全部产品</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container">
+                <div class="section-title">
+                    <h2>祛痘常见问题解答</h2>
+                    <p>为您解答关于痘痘成因、护肤误区及治疗周期的疑问</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h4>痘痘反反复复怎么办？</h4>
+                        <p>痘痘反复通常是因为皮肤屏障受损或治疗不彻底。建议暂停高浓度酸类产品，先修复屏障，同时调整作息和饮食。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>刷酸真的能祛痘吗？</h4>
+                        <p>水杨酸对油性痘痘有效，果酸对角质堆积有效。但刷酸有门槛，敏感肌需谨慎，建议在专业人士指导下使用。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>如何区分普通痘痘和激素痘？</h4>
+                        <p>激素痘通常分布密集，伴有红肿痒，且停用含激素产品后反弹严重。激素痘需要医疗手段介入治疗。</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>祛痘需要多长时间？</h4>
+                        <p>轻度痘痘修复周期为4-6周，中度需2-3个月，重度囊肿痘可能需要3-6个月甚至更久，请保持耐心。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 20px; display:inline-block;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                        祛痘吧Pro
+                    </a>
+                    <p style="font-size: 14px; color: #b2bec3; line-height: 1.8;">
+                        致力于为每一位受痘痘困扰的朋友提供科学、专业的护肤解决方案。我们相信，每个人都有权利拥有健康自信的肌肤。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">祛痘指南</a></li>
+                        <li><a href="#">护肤产品</a></li>
+                        <li><a href="#">在线咨询</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>护肤知识</h4>
+                    <ul>
+                        <li><a href="#">痘痘成因分析</a></li>
+                        <li><a href="#">刷酸入门教程</a></li>
+                        <li><a href="#">痘印修复指南</a></li>
+                        <li><a href="#">敏感肌护理</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li><a href="#">用户反馈</a></li>
+                        <li><a href="#">商务合作</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">免责声明</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 祛痘吧 Pro. All Rights Reserved. 本站内容仅供参考，不构成医疗建议。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
